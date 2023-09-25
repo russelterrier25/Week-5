@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CDN Tests</title>
+
+    <!-- Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icon CDN CSS-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- FontAwesome CDN CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FacnyApp CDN CSS-->
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+          />
+
+
+    <!-- AOL CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Local CSS-->
+    <link rel="stylesheet" href="/css/styles.css" />
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Testing CDNs</h1>
+
+
+
+      
+
+    <!-- jQuery Test-->
+    <h2>Testing jQuery</h2>
+    <span id="my-text">I am using jQuery</span>
+
+    <!-- Testing Google Fonts-->
+    <h2>Testing Google Fonts</h2>
+    <span id="my-google-font">This is an example of Google Fonts</span>
+
+    <!-- Testing Google Icons -->
+    <h2>Testing Google Icons</h2>
+    <span class="material-symbols-outlined">
+      shopping_cart_checkout
+    </span>
+
+    <!-- Testing FontAwesome-->
+    <h2>Testing FontAwesome</h2>
+    <i class="fa-solid fa-person-dress"></i>
+
+    <!-- FancyApp Test-->
+    <h2>Testing Fancy App</h2>
+    <div data-aos="flip-up">
+    <a 
+      href="https://dummyimage.com/200x200/0c963c/ffffff.jpg" 
+      data-fancybox="gallery"
+      data-caption="Single image"
+  
+    >
+      <img src="https://dummyimage.com/200x200/0c963c/ffffff.jpg" />
+    </a>
+  </div>
+
+    <!-- Begin JS Section-->
+    <section>
+      <!-- jQuery CDN -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+
+      <!-- FancyApp CDN JS-->
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+      <script>
+        Fancybox.bind('[data-fancybox="gallery"]',{
+          //
+        });
+      </script>
+      
+      <!-- AOS CDN JS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+
+      <!--Local Javascript-->
+      <script src="/js/scripts.js"></script>
+    </section>
+    <!-- End JS Section-->
+  </body>
+</html>
